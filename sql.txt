@@ -1,0 +1,182 @@
+Relational Database Management Systems, ACID Properties, Normalization
+Relational Database Management Systems (RDBMS) use tables to store data in a structured format. ACID properties (Atomicity, Consistency, Isolation, Durability) ensure reliable transactions. Normalization organizes data to reduce redundancy.
+
+Resources:
+
+RDBMS: www.geeksforgeeks.org/introduction-of-dbms-rdbms/
+ACID Properties: www.tutorialspoint.com/dbms/dbms_transaction.htm
+Normalization: www.studytonight.com/dbms/database-normalization.php
+Creating Databases, Dropping Databases, Selecting Databases, Renaming Databases, Showing Databases, Backing up Databases
+Learn how to manage databases including creating, deleting, selecting, renaming, listing, and backing them up.
+
+Resources:
+
+Creating, Dropping, Selecting Databases: www.mysqltutorial.org/mysql-create-database.aspx
+Renaming Databases: www.sqlshack.com/how-to-rename-a-sql-server-database/
+Showing Databases: www.sqltutorial.org/sql-show-databases/
+Backing up Databases: www.mysqltutorial.org/mysql-backup-database.aspx
+Basic SQL Statements, SQL Comments, SQL Injection
+Learn fundamental SQL statements, how to write comments, and the importance of preventing SQL injection attacks.
+
+Resources:
+
+Basic SQL Statements: www.w3schools.com/sql/sql_intro.asp
+SQL Comments: www.w3schools.com/sql/sql_comments.asp
+SQL Injection: www.owasp.org/index.php/SQL_Injection
+Numeric Data Types, Character Data Types, Date and Time Data Types, Handling NULL Values
+Understand different data types in SQL and how to handle NULL values.
+
+Resources:
+
+Data Types: www.w3schools.com/sql/sql_datatypes.asp
+Handling NULL Values: www.geeksforgeeks.org/sql-null-values/
+Comparison Operators, Logical Operators, Arithmetic Operators
+Learn about operators used in SQL for comparisons, logical operations, and arithmetic calculations.
+
+Resources:
+
+SQL Operators: www.w3schools.com/sql/sql_operators.asp
+Simple Expressions, Complex Expressions
+Understand how to write and use simple and complex expressions in SQL.
+
+Resources:
+
+SQL Expressions: www.geeksforgeeks.org/sql-expressions/
+Column Constraints, Table Constraints, Indexes
+Learn about constraints that enforce rules on data in columns and tables, and how to use indexes to improve performance.
+
+Resources:
+
+SQL Constraints: www.w3schools.com/sql/sql_constraints.asp
+SQL Indexes: www.mysqltutorial.org/mysql-indexes.aspx
+Filtering Rows, Sorting Results, Joining Tables
+Learn to filter rows, sort query results, and join tables.
+
+Resources:
+
+Filtering and Sorting: www.w3schools.com/sql/sql_where.asp
+Joining Tables: www.w3schools.com/sql/sql_join.asp
+Inner Join, Left Join, Right Join, Full Join, Self Join
+Understand different types of joins in SQL.
+
+Resources:
+
+SQL Joins: www.sqlshack.com/sql-join-types-explained-visual-examples/
+Inserting Data, Inserting Multiple Rows
+Learn how to insert single and multiple rows of data into a database.
+
+Resources:
+
+Inserting Data: www.w3schools.com/sql/sql_insert.asp
+Inserting Multiple Rows: www.sqlservertutorial.net/sql-server-insert-multiple-rows/
+Updating Data, Conditional Updates
+Learn to update data in a database and how to perform conditional updates.
+
+Resources:
+
+Updating Data: www.w3schools.com/sql/sql_update.asp
+Conditional Updates: www.sqlservertutorial.net/sql-server-update-join/
+Deleting Data, Conditional Deletes
+Understand how to delete data and perform conditional deletes.
+
+Resources:
+
+Deleting Data: www.w3schools.com/sql/sql_delete.asp
+Conditional Deletes: www.sqlservertutorial.net/sql-server-delete-join/
+Creating Views, Modifying Views, Dropping Views, Renaming Views
+Learn how to create, modify, drop, and rename views in SQL.
+
+Resources:
+
+Creating Views: www.sqlshack.com/sql-view-tips-tricks-and-examples/
+Modifying and Dropping Views: www.w3schools.com/sql/sql_view.asp
+Creating Indexes, Dropping Indexes, Using Indexes for Performance
+Understand how to create and drop indexes and use them to improve query performance.
+
+Resources:
+
+Creating and Dropping Indexes: www.mysqltutorial.org/mysql-indexes.aspx
+Using Indexes for Performance: www.sqlshack.com/sql-index-tips-tricks/
+Primary Key Constraints, Foreign Key Constraints, Unique Constraints
+Learn about primary key, foreign key, and unique constraints.
+
+Resources:
+
+SQL Constraints: www.w3schools.com/sql/sql_constraints.asp
+ACID Transactions, Commit and Rollback
+Understand the concepts of ACID transactions, commit, and rollback in SQL.
+
+Resources:
+
+ACID Transactions: www.tutorialspoint.com/sql/sql-transactions.htm
+Commit and Rollback: www.geeksforgeeks.org/sql-commit-rollback-and-savepoint/
+Creating Procedures, Modifying Procedures, Dropping Procedures
+Learn how to create, modify, and drop stored procedures in SQL.
+
+Resources:
+
+Creating Procedures: www.sqlservertutorial.net/sql-server-stored-procedures/
+Modifying and Dropping Procedures: www.sqlshack.com/sql-server-stored-procedures/
+Nested Queries, Correlated Subqueries
+Understand nested and correlated subqueries in SQL.
+
+Resources:
+
+Nested Queries: www.w3schools.com/sql/sql_subqueries.asp
+Correlated Subqueries: www.sqlservertutorial.net/sql-server-correlated-subquery/
+Date Functions, String Functions, Aggregate Functions, User-defined Functions
+Learn about various functions in SQL.
+
+Resources:
+
+Date Functions: www.sqlshack.com/sql-date-functions/
+String Functions: www.w3schools.com/sql/sql_ref_string.asp
+Aggregate Functions: www.w3schools.com/sql/sql_ref_avg.asp
+User-defined Functions: www.sqlshack.com/user-defined-functions-sql-server/
+Cursors, Common Table Expressions (CTEs), Dynamic SQL
+Understand cursors, CTEs, and dynamic SQL.
+
+Resources:
+
+Cursors: www.sqlshack.com/sql-server-cursor-example/
+CTEs: www.sqlservertutorial.net/sql-server-cte/
+Dynamic SQL: www.sqlshack.com/dynamic-sql-in-sql-server/
+Row number, Dense Rank, Rank, Lead, Lag, Nth
+Learn about various ranking functions in SQL.
+
+Resources:
+
+Ranking Functions: www.sqlshack.com/sql-server-ranking-functions/
+How to connect to a cloud database
+Learn to connect to a cloud database.
+
+Resources:
+
+Connecting to Cloud Databases: www.datadoghq.com/blog/connect-to-cloud-database/
+How to write and optimize SQL queries
+Learn how to write and optimize SQL queries.
+
+Resources:
+
+Writing and Optimizing Queries: www.sqlshack.com/sql-query-optimization/
+What are ACID transactions, Python session for DB transactions
+Understand ACID transactions and how to manage database transactions in Python.
+
+Resources:
+
+ACID Transactions: www.tutorialspoint.com/sql/sql-transactions.htm
+Python DB Transactions: www.dataquest.io/blog/python-pandas-databases/
+Database migrations, and reverting DB changes
+Learn about database migrations and how to revert changes.
+
+Resources:
+
+Database Migrations: www.flywaydb.org/getstarted/
+Reverting DB Changes: www.sqlservertutorial.net/sql-server-transaction-rollback/
+Go through documentation and setting up with different DB engines, common APIs and mapping
+Explore documentation for different DB engines and learn about common APIs and mapping.
+
+Resources:
+
+Setting up DB Engines: www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04
+Common APIs and Mapping: www.sqlalchemy.org/
