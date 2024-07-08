@@ -1,0 +1,80 @@
+topics cover : Creating Databases, Dropping Databases, Selecting Databases, Renaming Databases, Showing Databases, Backing up Databases
+
+CREATE Database Statement
+
+The CREATE DATABASE statement is a DDL (Data Definition Language) statement used to create a new database in SQL. If you are creating your database on Linux or Unix, then database names are case-sensitive, even though SQL keywords are case-insensitive. If you are working on Windows then this restriction does not apply.
+
+commands  : 
+CREATE DATABASE DatabaseName;
+
+List Databases using SQL
+Once the database testDB is created, you can check it in the list of databases using SQL command SHOW DATABASES;.
+
+SHOW DATABASE;
+
+Use/Select Databases using SQL
+
+We can now set the testDB as the default database by using the USE statement in SQL.
+USE testDB;
+
+
+How to Rename Database in SQL?
+
+To change the name of a database in SQL, use the syntax:
+
+ALTER DATABASE [current_database_name]
+MODIFY NAME = [new_database_name];
+
+To rename a database in MySQL use the query:
+
+RENAME DATABASE [current_database_name] TO [new_database_name];
+
+# backup database
+
+Method 1: Back up MySQL Database Using mysqldump
+mysqldump is the native MySQL backup solution. It allows the user to create a backup with a single command. The syntax is:
+
+sudo mysqldump -u username -p dbname > backup.sql
+
+Replace username with your MySQL username.
+dbname is the database name you want to back up.
+Replace backup.sql with the desired name for the backup file.
+
+Method 2: Back up MySQL Database Using phpMyAdmin
+
+phpMyAdmin uses the Export function to create backups. Follow the steps below:
+
+1. Open phpMyAdmin. In the directory tree on the left, click the database you want to back up.
+
+Doing so opens the directory structure in the right-hand window. You will also notice that all the assets under the main database are highlighted in the directory tree.
+
+2. Click the Export tab.
+
+3. Select Quick in the Export Method section to save a copy of the whole database. Choose Custom to select individual tables or other special options. Leave the Format field set to SQL unless you have a good reason to change it.
+
+# restore the database
+
+How to Restore MySQL Database
+Method 1: Restore All Databases in MySQL
+The mysqldump utility allows you to restore a single database or all databases on the server in bulk. To restore all databases in MySQL, use the mysql command-line tool with an SQL dump file that contains the structure and data for all databases.
+
+Follow the steps below:
+
+1. Note the location of your SQL dump file containing the structure and data for all databases.
+
+2. Use the mysql command to restore the dump file. The syntax is:
+
+mysql -u username -p < backup.sql
+
+
+Method 2: Restore MySQL Database Using phpMyAdmin
+phpMyAdmin is a popular web-based administration tool for MySQL. It is a convenient option for smaller databases. However, other methods like command-line tools or MySQL clients are more suitable for larger databases or when you need more control over the restoration process.
+
+Follow the steps below to restore a MySQL database using phpMyAdmin.
+
+1. Clear Old Database Information
+It's important to clear old data before restoring a backup. If there is old data, it isn't overwritten when you restore the backup, causing duplicate tables, errors, and conflicts.
+
+1. Open phpMyAdmin, and from the navigation pane on the left, choose the database you want to restore.
+
+2. Select the Check all box near the bottom and click the Drop button to clear the old data.

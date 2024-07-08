@@ -1,0 +1,40 @@
+topics cover : Column Constraints, Table Constraints, Indexes sql
+
+Column Constraints
+Column constraints are rules applied to individual columns when defining a table. Some common column constraints are:
+NOT NULL
+Ensures the column cannot contain NULL values
+Example: CREATE TABLE users (id INT NOT NULL, name VARCHAR(50) NOT NULL);
+UNIQUE
+Ensures all values in the column are unique
+Example: CREATE TABLE users (id INT UNIQUE, email VARCHAR(50) UNIQUE);
+CHECK
+Ensures values meet a specified condition
+Example: CREATE TABLE products (id INT, price DECIMAL CHECK (price > 0));
+DEFAULT
+Specifies a default value when none is provided
+Example: CREATE TABLE users (id INT, role VARCHAR(10) DEFAULT 'user');
+
+Table Constraints
+Table constraints are rules applied to the entire table, not just a single column. They can reference multiple columns. Some table constraints are:
+PRIMARY KEY
+Uniquely identifies each row and cannot contain NULL
+Example: CREATE TABLE users (id INT PRIMARY KEY, email VARCHAR(50));
+FOREIGN KEY
+References a column in another table to link data between tables
+Example: CREATE TABLE orders (id INT, user_id INT FOREIGN KEY REFERENCES users(id));
+CHECK
+Ensures values meet a condition across multiple columns
+Example: CREATE TABLE users (id INT, email VARCHAR(50), CONSTRAINT chk_email CHECK (email LIKE '%@%.%'));
+
+
+Indexes
+Indexes are data structures that improve the speed of data retrieval operations on a table. They work similar to an index in a book - they provide a quick way to locate specific information.
+Some key points about indexes:
+They can be created on one or more columns of a table
+They automatically maintain a sorted list of the column values and pointers to the actual rows
+Indexes speed up SELECT queries but slow down INSERT, UPDATE, and DELETE operations
+Unique indexes ensure uniqueness of values, similar to a UNIQUE constraint
+Indexes can be created using the CREATE INDEX statement
+Example: CREATE INDEX idx_users_email ON users(email);
+In summary, constraints maintain data integrity by enforcing rules on the data, while indexes optimize query performance by creating sorted lists of values. Used together, they help ensure high-quality, reliable data in a database.

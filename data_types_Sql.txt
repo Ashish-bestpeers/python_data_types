@@ -1,0 +1,46 @@
+topics cover : Numeric Data Types, Character Data Types, Date and Time Data Types, Handling NULL Values
+
+#####Numeric data_types
+
+-- Integer types
+DECLARE @smallint SMALLINT = -32768 
+DECLARE @int INTEGER = -2147483648
+DECLARE @bigint BIGINT = -9223372036854775808
+
+-- Floating point types  
+DECLARE @real REAL = 3.14159
+DECLARE @float FLOAT(24) = 3.14159
+DECLARE @double FLOAT(53) = 3.14159
+
+-- Fixed point types
+DECLARE @decimal DECIMAL(10,2) = 123.45
+DECLARE @numeric NUMERIC(10,2) = 123.45
+
+#####Character data_types
+
+-- Fixed length strings
+DECLARE @char CHAR(10) = 'abc'
+
+-- Variable length strings
+DECLARE @varchar VARCHAR(10) = 'abc'
+DECLARE @nvarchar NVARCHAR(10) = N'abc'
+
+-- Unicode strings 
+DECLARE @nchar NCHAR(10) = N'abc'
+
+#####date and time data types
+
+-- Date and time types
+DECLARE @date DATE = '2023-07-08'
+DECLARE @time TIME = '12:34:56.789'
+DECLARE @datetime DATETIME = '2023-07-08 12:34:56.789'
+DECLARE @datetime2 DATETIME2 = '2023-07-08 12:34:56.7789999'
+
+#####Handling NULL Values
+
+-- Checking for NULL
+SELECT * FROM table WHERE column IS NULL
+SELECT * FROM table WHERE column IS NOT NULL
+
+-- Coalescing NULL values
+SELECT COALESCE(column, 'default value') FROM table
