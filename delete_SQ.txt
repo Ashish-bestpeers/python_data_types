@@ -1,0 +1,37 @@
+Deleting Data
+To delete data from a database table, you can use the SQL DELETE statement. Here's the general syntax:
+sql
+DELETE FROM table_name
+WHERE condition;
+
+The WHERE clause specifies the condition for selecting the rows to be deleted. If you omit the WHERE clause, all rows in the table will be deleted.
+Deleting a Single Row
+To delete a single row, you can use the following syntax:
+sql
+DELETE FROM employees
+WHERE employee_id = 123;
+
+This will delete the row where the employee_id is 123.
+Deleting Multiple Rows
+To delete multiple rows based on a condition, you can use the following syntax:
+sql
+DELETE FROM employees
+WHERE department = 'Sales';
+
+This will delete all rows where the department is 'Sales'.
+Conditional Deletes
+You can use the WHERE clause to delete rows based on specific conditions. This allows you to selectively remove data from your table.
+Deleting Rows Based on a Condition
+For example, to delete all employees who have a salary less than 50,000:
+sql
+DELETE FROM employees
+WHERE salary < 50000;
+
+This will delete all rows where the salary is less than 50,000.
+Deleting Rows Based on Multiple Conditions
+You can also use multiple conditions in the WHERE clause, connected by AND or OR operators:
+sql
+DELETE FROM employees
+WHERE department = 'Sales' AND years_of_experience < 5;
+
+This will delete the rows where the department is 'Sales' and the years_of_experience is less than 5.
