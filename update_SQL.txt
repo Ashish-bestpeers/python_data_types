@@ -1,0 +1,42 @@
+Updating Data
+To update data in a database, you can use the SQL UPDATE statement. Here's the general syntax:
+sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+The SET clause specifies the columns you want to update and the new values you want to assign to them. The WHERE clause determines which rows will be updated based on the specified condition.
+Updating a Single Column
+To update a single column, you can use the following syntax:
+sql
+UPDATE employees
+SET email = 'new.email@example.com'
+WHERE employee_id = 123;
+
+This will update the email column for the row where the employee_id is 123.
+Updating Multiple Columns
+To update multiple columns, you can list them in the SET clause, separated by commas:
+sql
+UPDATE employees
+SET email = 'new.email@example.com', phone = '555-1234'
+WHERE employee_id = 123;
+
+This will update both the email and phone columns for the row where the employee_id is 123.
+Conditional Updates
+You can use the WHERE clause to update rows based on a specific condition. This allows you to selectively update data in your table.
+Updating Rows Based on a Condition
+For example, to update the salary column for all employees in the "Sales" department:
+sql
+UPDATE employees
+SET salary = salary * 1.1
+WHERE department = 'Sales';
+
+This will increase the salary by 10% for all employees in the "Sales" department.
+Updating Rows Based on Multiple Conditions
+You can also use multiple conditions in the WHERE clause, connected by AND or OR operators:
+sql
+UPDATE employees
+SET salary = salary * 1.2
+WHERE department = 'Sales' AND years_of_experience > 5;
+
+This will update the salary by 20% for employees in the "Sales" department who have more than 5 years of experience.

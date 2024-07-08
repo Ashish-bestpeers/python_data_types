@@ -1,0 +1,44 @@
+Inserting Data into a Single Row
+To insert data into a single row, you can use the INSERT INTO statement followed by the table name, column names, and values. Here's the basic syntax:
+sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+Example:
+sql
+INSERT INTO employees (name, email, department)
+VALUES ('John Doe', 'john.doe@example.com', 'Sales');
+
+This will insert a new row into the employees table with the specified values for name, email, and department columns.
+Inserting Multiple Rows
+To insert multiple rows at once, you can use the same INSERT INTO statement but provide multiple sets of values separated by commas. Here's the syntax:
+sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...),
+       (value1, value2, value3, ...),
+       (value1, value2, value3, ...);
+
+Example:
+sql
+INSERT INTO employees (name, email, department)
+VALUES ('John Doe', 'john.doe@example.com', 'Sales'),
+       ('Jane Smith', 'jane.smith@example.com', 'Marketing'),
+       ('Bob Johnson', 'bob.johnson@example.com', 'IT');
+
+This will insert three new rows into the employees table with the specified values for each row.
+Inserting Data from Another Table
+You can also insert data from one table into another using the INSERT INTO statement with a SELECT statement. Here's the syntax:
+sql
+INSERT INTO table1 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table2
+WHERE condition;
+
+Example:
+sql
+INSERT INTO employees (name, email, department)
+SELECT name, email, 'HR'
+FROM job_applicants
+WHERE status = 'approved';
+
+This will insert rows from the job_applicants table into the employees table, setting the department column to 'HR' for all approved applicants.
