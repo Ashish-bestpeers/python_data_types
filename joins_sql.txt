@@ -1,0 +1,64 @@
+topics cover : Inner Join, Left Join, Right Join, Full Join, Self Join
+
+INNER JOIN
+An INNER JOIN combines rows from two or more tables based on a related column, and returns only the matching rows
+
+SELECT column1, column2...
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+
+LEFT JOIN
+A LEFT JOIN returns all rows from the left table, and the matched rows from the right table
+
+SELECT column1, column2...
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+
+right JOIN
+A RIGHT JOIN returns all rows from the RIGHT table, and the matched rows from the LEFT table
+
+sql
+SELECT column1, column2... 
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+
+Full JOIN
+it will join all the rows if left and right table
+
+SELF JOIN
+A SELF JOIN is a regular join, but the table is joined with itself.
+sql
+SELECT column1, column2... 
+FROM table1 T1
+JOIN table1 T2
+ON T1.column = T2.column;
+
+The key points are:
+INNER JOIN returns only matching rows
+LEFT/RIGHT JOIN returns all rows from one table plus matching rows from the other table
+FULL JOIN returns all rows from both tables
+SELF JOIN joins a table to itself using aliases
+The join condition is specified in the ON clause
+
+Pros of SQL Joins
+Performance
+Joins generally execute faster than subqueries, especially for large datasets. The database can optimize the execution plan for joins more effectively.
+Readability
+Joins make the query logic more explicit and easier to understand compared to nested subqueries.
+Flexibility
+Joins allow you to combine data from multiple tables in a single result set, providing more flexibility in the types of queries you can write.
+Maintainability
+Joins are generally simpler to write and maintain compared to complex nested subqueries.
+Cons of SQL Joins
+Complexity
+Joins can become complex when dealing with multiple tables and join conditions, making the query harder to read and maintain.
+Performance
+Poorly designed joins with inefficient join conditions or lack of indexes can lead to performance issues, especially for large datasets.
+The key points are:
+Joins are more readable and maintainable than subqueries
+Joins are generally faster than subqueries, but can have performance issues if not designed well
+Joins provide more flexibility to combine data from multiple tables
+Joins can become complex with many tables and conditions
